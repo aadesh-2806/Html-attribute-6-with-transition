@@ -1,0 +1,54 @@
+section div {
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    padding-top: 25px;
+    background-color: mediumseagreen;
+    transition: margin-left 5s;
+}
+section:hover div {
+    margin-left: 500px;                 /*move with cursor*/
+}
+div:nth-of-type(1){
+    transition-timing-function: linear ;
+    background-color: slateblue;
+    transform: scale(0.5);          /* scale(1,2)*/
+}
+div:nth-of-type(2){
+    transition-timing-function: ease-out;
+    background-color: springgreen;
+    transform: rotatex(35deg);             /* rotate at x axis */
+    transform: translatex(-100px);        /*  can move any direction up -ve left too rest +ve*/
+    transform: skew(25deg);
+}
+div:nth-of-type(3){
+    transition-timing-function: ease-in;
+    background-color: turquoise;
+    transform: rotatey(35deg);
+    transform: translate(12px , 50%);
+/*    transform: skewx(25deg);              do it rhombus shape---for ex*/
+}
+div:nth-of-type(4){
+    transition-timing-function: cubic-bezier(0.7,0,0.84,0);
+    background-color: violet;
+}
+div:nth-of-type(5){
+    transition-timing-function: ease-in-out;
+    background-color: yellow;
+    transform: rotate(35deg);
+    transform-origin: top left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
